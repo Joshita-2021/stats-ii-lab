@@ -21,7 +21,7 @@ library(MatchIt) # for matching
 
 set.seed(123) # for consistent results
 ```
-
+#KABLE IS A PART OF THE PACKAGE THAT KNITS.It adds a column, colour.
 ### Data Prep and EDA
 
 First, let's read in the data. Then we will compare the students *pre-matching* on their standardized math scores (c5r2mtsc_std).
@@ -37,6 +37,13 @@ ecls %>%
   round(3) %>% # round the results
   kable() %>% # create kable table
   kable_styling() # view kable table
+
+#piping operator makes things more intutive. 
+#select chooses columns
+#filters deals with rows.
+#group_by organizes data.
+
+
 ```
 
 We can see that we have many more students that did not attend Catholic school than those who did, and the Catholic school students have a math score that is 0.194 points higher. 
